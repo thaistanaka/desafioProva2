@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".scenarios_main.pesquisa_drink_nome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:src="@mipmap/back"
+            android:scaleType="fitCenter"
+            />
+
+        <EditText
+            android:id="@+id/pesquisa_drink2"
+            android:layout_width="200dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:hint="Pesquisar bebida"
+            android:gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_pesquisa2"
+            android:layout_width="30dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:src="@mipmap/drink"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
