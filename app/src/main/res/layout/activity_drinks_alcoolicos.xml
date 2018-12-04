@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".scenarios_main.drinks_alcoolicos">
+    tools:context=".scenarios.drinks_alcoolicos">
 
     <ImageButton
         android:id="@+id/btn_back_alc"
@@ -14,5 +14,13 @@
         android:src="@mipmap/back"
         android:scaleType="fitCenter"
         />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvdrink_alcoolicos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/drink_item"
+        />
+
 
 </LinearLayout>

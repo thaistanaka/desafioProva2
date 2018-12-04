@@ -1,4 +1,4 @@
-package com.example.windows.desafioprova2.scenarios_main
+package com.example.windows.desafioprova2.scenarios
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity

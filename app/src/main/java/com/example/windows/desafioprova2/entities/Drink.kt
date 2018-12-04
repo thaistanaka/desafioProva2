@@ -1,5 +1,7 @@
 package com.example.windows.desafioprova2.entities
 
+import java.io.Serializable
+
 data class Drink (
         val strDrink: String,
         val strDrinkThumb: String,
@@ -36,4 +38,4 @@ data class Drink (
         val strMeasure13: String,
         val strMeasure14: String,
         val strMeasure15: String
-)
+) : Serializable

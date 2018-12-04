@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".scenarios_main.pesquisa_drink_nome">
+    tools:context=".scenarios.pesquisa_drink_nome">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,5 +40,10 @@
             />
 
     </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvdrink_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
