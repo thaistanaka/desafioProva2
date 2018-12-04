@@ -5,32 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".scenarios.MainActivity">
+    tools:context=".scenario.scenario_main.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="50dp"
-        android:text="Info Drink" />
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/img_splash"
-        android:layout_weight="1"
-        android:src="@mipmap/drink"
-        android:layout_gravity="center"
+        android:text="Random"
+        android:id="@+id/btn_random"
         />
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvdrink_alcoolicos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        tools:listitem="@layout/drink_item"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:id="@+id/ProgressBar"/>
+
 
 </LinearLayout>

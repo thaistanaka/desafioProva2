@@ -1,4 +1,4 @@
-package com.example.windows.desafioprova2.entities
+package com.example.windows.teste.entitie
 
 import java.io.Serializable
 

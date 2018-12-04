@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.windows.desafioprova2">
+    package="com.example.windows.teste">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,17 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".scenarios.MainActivity">
+        <activity android:name=".scenario.scenario_main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".scenarios.home" />
-        <activity android:name=".scenarios.pesquisa_drink_nome" />
-        <activity android:name=".scenarios.drinks_alcoolicos" />
-        <activity android:name=".scenarios.drink_descricao"></activity>
+        <activity android:name=".scenario.scenario_infoDrink.InfoDrink"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.windows.desafioprova2
+package com.example.windows.teste
 
 import org.junit.Test
 

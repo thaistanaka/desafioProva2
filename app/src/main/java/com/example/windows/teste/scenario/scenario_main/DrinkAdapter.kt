@@ -1,4 +1,4 @@
-package com.example.windows.desafioprova2.scenarios
+package com.example.windows.teste.scenario.scenario_main
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -7,10 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.windows.desafioprova2.R
-import com.example.windows.desafioprova2.entities.Drink
+import com.example.windows.teste.R
+import com.example.windows.teste.entitie.Drink
 import kotlinx.android.synthetic.main.drink_item.view.*
-
 
 class DrinkAdapter (val context: Context, val drinks: List<Drink>)
     : RecyclerView.Adapter<DrinkAdapter.ViewHolder>(){
@@ -39,17 +38,17 @@ class DrinkAdapter (val context: Context, val drinks: List<Drink>)
         fun bindView(context: Context, drink: Drink, itemClickListener: ((index: Int) -> Unit)?){
             itemView.tv_nomedrink.text = drink.strDrink
 
+            Glide.with(context)
+                    .load(drink.strDrinkThumb)
+                    .apply(RequestOptions()
+                            .placeholder(R.mipmap.ic_launcher))
+                    .into(itemView.tv_imagedrink)
+
             if(itemClickListener != null) {
                 itemView.setOnClickListener {
                     itemClickListener.invoke(adapterPosition)
                 }
             }
-
-            Glide.with(context)
-                    .load(drink.strDrinkThumb)
-                    .apply(RequestOptions()
-                            .placeholder(R.mipmap.back))
-                    .into(itemView.tv_imagedrink)
         }
     }
 }
