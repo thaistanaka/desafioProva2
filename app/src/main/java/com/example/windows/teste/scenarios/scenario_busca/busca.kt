@@ -61,9 +61,9 @@ class busca : AppCompatActivity(), buscaContract.view {
             presenter.onLoadDrink(drinks[position])
         }
 
-        rvdrink_alcoolicos.adapter = adapter
-        rvdrink_alcoolicos.layoutManager = layoutManager
-        rvdrink_alcoolicos.addItemDecoration(dividerItemDecoration)
+        rvbusca_nome.adapter = adapter
+        rvbusca_nome.layoutManager = layoutManager
+        rvbusca_nome.addItemDecoration(dividerItemDecoration)
     }
 
     override fun mostraInfo(drink: Drink) {
@@ -73,11 +73,11 @@ class busca : AppCompatActivity(), buscaContract.view {
     }
 
     override fun hideProgressBar() {
-        ProgressBar.visibility = android.widget.ProgressBar.INVISIBLE
+        ProgressBar4.visibility = android.widget.ProgressBar.INVISIBLE
     }
 
     override fun showProgressBar() {
-        ProgressBar.visibility = android.widget.ProgressBar.VISIBLE
+        ProgressBar4.visibility = android.widget.ProgressBar.VISIBLE
     }
 
     override fun showMessage(message: String) {
