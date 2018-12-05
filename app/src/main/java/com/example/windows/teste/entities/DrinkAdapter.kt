@@ -1,4 +1,4 @@
-package com.example.windows.teste.scenario.scenario_main
+package com.example.windows.teste.entities
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.windows.teste.R
-import com.example.windows.teste.entitie.Drink
 import kotlinx.android.synthetic.main.drink_item.view.*
 
 class DrinkAdapter (val context: Context, val drinks: List<Drink>)

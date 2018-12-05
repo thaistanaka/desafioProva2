@@ -14,4 +14,8 @@ interface DrinkService {
 
     @GET("lookup.php?")
     fun id_drink(@Query("i") i : String) : Call<DrinkList>
+
+    @GET("search.php?")
+    fun busca(@Query("s") s: String) : Call<DrinkList>
+
 }

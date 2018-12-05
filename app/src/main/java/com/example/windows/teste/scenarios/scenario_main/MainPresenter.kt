@@ -1,4 +1,4 @@
-package com.example.windows.teste.scenario.scenario_main
+package com.example.windows.teste.scenarios.scenario_main
 
 import com.example.windows.teste.entities.Drink
 import com.example.windows.teste.entities.DrinkList

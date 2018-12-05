@@ -1,4 +1,4 @@
-package com.example.windows.teste.scenario.scenario_opcao
+package com.example.windows.teste.scenarios.scenario_opcao
 
 import com.example.windows.teste.entities.DrinkList
 import com.example.windows.teste.network.RetrofitInicializer

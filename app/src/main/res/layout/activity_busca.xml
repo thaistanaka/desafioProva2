@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".scenarios.scenario_main.MainActivity">
+    tools:context=".scenarios.scenario_busca.busca">
 
     <LinearLayout
         android:background="@color/colorPrimary"
@@ -14,15 +14,30 @@
 
         <ImageButton
             android:background="@color/colorPrimary"
-            android:id="@+id/btn_back2"
+            android:id="@+id/btn_back3"
             android:scaleType="centerInside"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@mipmap/back"/>
+
+        <EditText
+            android:id="@+id/et_nomeDrink2"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Pesquisar bebida"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:background="@color/colorPrimary"
+            android:id="@+id/btn_busca2"
+            android:scaleType="centerInside"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/drink"/>
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvdrink_alcoolicos"
+        android:id="@+id/rvbusca_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:listitem="@layout/drink_item"
@@ -33,6 +48,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="invisible"
-        android:id="@+id/ProgressBar"/>
+        android:id="@+id/ProgressBar4"/>
 
 </LinearLayout>

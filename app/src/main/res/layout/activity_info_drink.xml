@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".scenario.scenario_infoDrink.InfoDrink">
+    tools:context=".scenarios.scenario_infoDrink.InfoDrink">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,10 +12,12 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageButton
+                android:background="@color/colorPrimary"
                 android:id="@+id/btn_back"
                 android:scaleType="centerInside"
                 android:layout_width="50dp"
@@ -24,6 +26,7 @@
         </LinearLayout>
 
         <TextView
+            android:textColor="@color/colorAccent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"

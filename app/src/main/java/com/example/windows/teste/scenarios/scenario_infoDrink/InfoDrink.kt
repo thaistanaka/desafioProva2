@@ -1,4 +1,4 @@
-package com.example.windows.teste.scenario.scenario_infoDrink
+package com.example.windows.teste.scenarios.scenario_infoDrink
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -8,7 +8,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.windows.teste.R
 import com.example.windows.teste.entities.Drink
-import com.example.windows.teste.scenario.scenario_opcao.opcao
+import com.example.windows.teste.scenarios.scenario_opcao.opcao
 import kotlinx.android.synthetic.main.activity_info_drink.*
 
 class InfoDrink : AppCompatActivity() {
