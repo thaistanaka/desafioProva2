@@ -1,13 +1,17 @@
-package com.example.windows.teste.scenario.scenario_opcao
+package com.example.windows.teste.scenarios.scenario_opcao
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import com.example.windows.teste.R
+import com.example.windows.teste.R.id.*
 import com.example.windows.teste.entities.Drink
-import com.example.windows.teste.scenario.scenario_infoDrink.InfoDrink
-import com.example.windows.teste.scenario.scenario_main.MainActivity
+import com.example.windows.teste.scenarios.scenario_busca.busca
+import com.example.windows.teste.scenarios.scenario_infoDrink.InfoDrink
+import com.example.windows.teste.scenarios.scenario_main.MainActivity
 import kotlinx.android.synthetic.main.activity_opcao.*
 
 class opcao : AppCompatActivity(), opcaoContract.view {
@@ -24,6 +28,19 @@ class opcao : AppCompatActivity(), opcaoContract.view {
         link_sortear.setOnClickListener{
             val presenter: opcaoContract.presenter = opcaoPresenter(this)
             presenter.onLoadRandomInfo()
+        }
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        btn_busca.setOnClickListener{
+            val intent = Intent(this, busca::class.java)
+            var editText = findViewById<View>(R.id.et_nomeDrink) as EditText
+            val nome_drink = editText.text.toString()
+            intent.putExtra("nome_drink", nome_drink)
+            startActivity(intent)
         }
     }
 

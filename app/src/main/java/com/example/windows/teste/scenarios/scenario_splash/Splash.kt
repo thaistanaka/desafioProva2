@@ -1,11 +1,11 @@
-package com.example.windows.teste.scenario.scenario_splash
+package com.example.windows.teste.scenarios.scenario_splash
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.windows.teste.R
-import com.example.windows.teste.scenario.scenario_opcao.opcao
+import com.example.windows.teste.scenarios.scenario_opcao.opcao
 
 class Splash : AppCompatActivity() {
 
