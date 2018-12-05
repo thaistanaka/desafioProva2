@@ -11,6 +11,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:scaleType="centerInside"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/back"/>
+        </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,13 +38,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:id="@+id/tv_imagedrinkInfo"
-                android:src="@mipmap/ic_launcher"
-                android:layout_marginLeft="30dp" />
+                android:src="@mipmap/ic_launcher" />
 
         </LinearLayout>
 
@@ -53,9 +63,76 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Category: "
+                android:gravity="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_category"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alcoholic: "
+                android:gravity="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_alcool"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Glass: "
+                android:gravity="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_glass"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tv1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_ing1"
                 android:layout_weight="1"
                 android:gravity="end"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,6 +143,8 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv2"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -80,12 +159,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med2"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv3"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -100,12 +187,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med3"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv4"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -118,6 +213,12 @@
                 android:gravity="end" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
                 android:id="@+id/tv_med4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -126,6 +227,8 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv5"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -140,12 +243,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med5"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv6"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -160,12 +271,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med6"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv7"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -180,12 +299,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med7"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv8"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -200,12 +327,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med8"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv9"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -220,12 +355,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med9"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv10"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -240,12 +383,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med10"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv11"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -260,12 +411,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med11"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv12"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -280,12 +439,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med12"
                 android:layout_weight="1"/>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv13"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -297,6 +464,13 @@
                 android:layout_weight="1"
                 android:gravity="end"/>
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -306,6 +480,8 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv14"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -317,6 +493,13 @@
                 android:layout_weight="1"
                 android:gravity="end"/>
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -326,6 +509,8 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/tv15"
+            android:visibility="gone"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -340,10 +525,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" - "/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/tv_med15"
                 android:layout_weight="1"/>
 
         </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:id="@+id/ProgressBar3"/>
 
     </LinearLayout>
 

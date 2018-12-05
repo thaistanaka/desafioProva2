@@ -7,12 +7,17 @@
     android:orientation="vertical"
     tools:context=".scenario.scenario_main.MainActivity">
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Random"
-        android:id="@+id/btn_random"
-        />
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_back2"
+            android:scaleType="centerInside"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/back"/>
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rvdrink_alcoolicos"
@@ -27,6 +32,5 @@
         android:layout_gravity="center"
         android:visibility="invisible"
         android:id="@+id/ProgressBar"/>
-
 
 </LinearLayout>

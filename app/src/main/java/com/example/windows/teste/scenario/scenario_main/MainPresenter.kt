@@ -1,7 +1,7 @@
 package com.example.windows.teste.scenario.scenario_main
 
-import com.example.windows.teste.entitie.Drink
-import com.example.windows.teste.entitie.DrinkList
+import com.example.windows.teste.entities.Drink
+import com.example.windows.teste.entities.DrinkList
 import com.example.windows.teste.network.RetrofitInicializer
 import retrofit2.Call
 import retrofit2.Callback
@@ -27,28 +27,6 @@ class MainPresenter(val view : MainContract.view): MainContract.presenter {
                     view.showList(response.body()!!.drinks)
                 }else{
                     view.showMessage("No drinks")
-                }
-            }
-
-        })
-    }
-
-    override fun onLoadRandomInfo(){
-        view.showProgressBar()
-        val callRandom = RetrofitInicializer().drinkService().random()
-
-        callRandom.enqueue(object : Callback<DrinkList> {
-            override fun onFailure(call: Call<DrinkList>, t: Throwable) {
-                view.hideProgressBar()
-                view.showMessage("Connection failed")
-            }
-
-            override fun onResponse(call: Call<DrinkList>, response: Response<DrinkList>) {
-                view.hideProgressBar()
-                if (response.body() != null){
-                    view.mostraInfo(response.body()!!.drinks[0])
-                }else{
-                    view.showMessage("No Drinks")
                 }
             }
 

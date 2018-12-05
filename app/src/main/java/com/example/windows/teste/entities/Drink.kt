@@ -1,4 +1,4 @@
-package com.example.windows.teste.entitie
+package com.example.windows.teste.entities
 
 import java.io.Serializable
 
@@ -8,6 +8,9 @@ data class Drink (
         val idDrink: String,
         val strAlcoholic: String,
         val strInstructions: String,
+        val strCategory: String,
+        val strIBA: String,
+        val strGlass: String,
         val strIngredient1: String,
         val strIngredient2: String,
         val strIngredient3: String,

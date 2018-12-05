@@ -1,7 +1,6 @@
 package com.example.windows.teste.network
 
-import com.example.windows.teste.entitie.Drink
-import com.example.windows.teste.entitie.DrinkList
+import com.example.windows.teste.entities.DrinkList
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

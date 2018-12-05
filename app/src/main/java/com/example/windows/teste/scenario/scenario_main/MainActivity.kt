@@ -6,8 +6,9 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.widget.Toast
 import com.example.windows.teste.R
-import com.example.windows.teste.entitie.Drink
+import com.example.windows.teste.entities.Drink
 import com.example.windows.teste.scenario.scenario_infoDrink.InfoDrink
+import com.example.windows.teste.scenario.scenario_opcao.opcao
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainContract.view {
@@ -19,14 +20,11 @@ class MainActivity : AppCompatActivity(), MainContract.view {
         val presenter: MainContract.presenter = MainPresenter(this)
         presenter.onLoadAlcool()
 
-    }
-
-    override fun onResume(){
-        super.onResume()
-        btn_random.setOnClickListener(){
-            val presenter: MainContract.presenter = MainPresenter(this)
-            presenter.onLoadRandomInfo()
+        btn_back2.setOnClickListener{
+            val intent = Intent(this, opcao::class.java)
+            startActivity(intent)
         }
+
     }
 
     override fun showMessage(message: String) {

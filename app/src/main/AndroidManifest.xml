@@ -12,14 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".scenario.scenario_main.MainActivity">
+        <activity android:name=".scenario.scenario_main.MainActivity" />
+        <activity android:name=".scenario.scenario_infoDrink.InfoDrink" />
+        <activity android:name=".scenario.scenario_splash.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".scenario.scenario_infoDrink.InfoDrink"></activity>
+        <activity android:name=".scenario.scenario_opcao.opcao"></activity>
     </application>
 
 </manifest>

@@ -1,7 +1,6 @@
 package com.example.windows.teste.scenario.scenario_main
 
-import com.example.windows.teste.entitie.Drink
-import com.example.windows.teste.entitie.DrinkList
+import com.example.windows.teste.entities.Drink
 
 interface MainContract {
 
@@ -16,6 +15,5 @@ interface MainContract {
     interface presenter{
         fun onLoadAlcool()
         fun onLoadDrink(drink : Drink)
-        fun onLoadRandomInfo()
     }
 }
